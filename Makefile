@@ -19,8 +19,11 @@ cpiqmath:
 	cp iqmath/src/IQmathTables.c ${ORILIB_INC_DIR}/iqmath
 	
 
-install: unpack cpiqmath
+install: unpack
 	echo "copying files..."
+
+preporilib: twiddles cpiqmath
+	echo "copying files for orilib preparation..."
 
 
 clean:
