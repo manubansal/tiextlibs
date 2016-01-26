@@ -19,7 +19,7 @@ cpiqmath:
 	cp iqmath/src/IQmathTables.c ${ORILIB_INC_DIR}/iqmath
 	
 
-install: unpack twiddles cpiqmath
+install: unpack cpiqmath
 	echo "copying files..."
 
 
