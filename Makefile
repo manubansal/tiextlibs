@@ -3,6 +3,7 @@
 unpack:
 	if [ ! -d iqmath ]; then tar -xvzf iqmath.tar.gz; fi
 	if [ ! -d pdk_C6670_1_1_2_5 ]; then tar -xvzf pdk_C6670_1_1_2_5.tar.gz; fi
+	if [ ! -d pdk_k2hk_4_0_7 ]; then tar -xvzf pdk_k2hk_4_0_7.tar.gz; fi
 	if [ ! -d dsplib_c66x_3_2_0_1 ]; then tar -xvzf dsplib_c66x_3_2_0_1.tar.gz; fi
 	cp dsplib_c66x_3_2_0_1/packages/ti/dsplib/lib/dsplib.ae66e dsplib_c66x_3_2_0_1/packages/ti/dsplib/lib/lib.dsplib.a
 
@@ -30,6 +31,7 @@ clean:
 	rm -rf dsplib_twiddles
 	rm -rf iqmath
 	rm -rf pdk_C6670_1_1_2_5
+	rm -rf pdk_k2hk_4_0_7
 	rm -rf dsplib_c66x_3_2_0_1
 
 #	rm -rf csl_tci6616_1.0.0.21
